@@ -7,7 +7,8 @@ However, the rate of loan default is increasing exponentially. According to Forb
 ## Objective
 The Objective of our project was to assess the likelihood of loan default based on customer demographics and financial data by fitting a model using various machine learning techniques and thereby predict defaulting applicants. Furthermore, we were interested to find the most significant variables that contribute to determining loan default.
 
-## Dataset Link: https://www.kaggle.com/faressayah/lending-club-loan-defaulters-prediction
+## Dataset Link:
+https://www.kaggle.com/faressayah/lending-club-loan-defaulters-prediction
 
 ## Data Description 
 The data that used here is from Lending club. Lending Club is a peer-to-peer lending platform which offers loan trading on a secondary market. 
