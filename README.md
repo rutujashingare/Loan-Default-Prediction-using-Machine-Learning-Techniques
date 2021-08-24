@@ -31,7 +31,8 @@ When observation in one class is higher than the observation in other classes th
 Imbalance data can hamper our model accuracy. Out of total observations, 80.39% of the people have fully paid the loan where as 19.61% are defaulters. So, to overcome this challenge, we used oversampling method which duplicates random records from the minority class. 
 
 ## Model Fitting
-Logistic Regression:
+Logistic Regression
+
 Logistic regression which is also known as classification algorithm is used to describe data and explain the relationship between and dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.   
 logistic regression helps us to make informed decisions. Based on variable “loan_Status” , we can predict whether customer will default or not using logistic regression. 
  
