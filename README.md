@@ -20,15 +20,25 @@ Data consists of customer demographics as well and financial details such as tot
 Revolving line utilization rate and number of public record bankruptcies had missing data points, but they accounted for less than 0.5% of the total data. So We removed the missing values in those columns. We imputed the missing values for the variable mortgage accounts. We also removed the observation with annual income equal to 0 because it is highly unlikely for a bank to give loan to a person with no income. For dimension reduction, the variables from the dataset which I thought would might not contribute significantly towards the analysis such as address, etc. I also converted the categorical variables into factors.
 
 ## EDA 
-The pie chart shows the distribution of defaulters and non-defaulters. Out of the total observations, 80.4% of the people had fully paid the loan whereas 19.6% were defaulters. Here we can see that the data is highly imbalanced.
+The pie chart shows the distribution of defaulters and non-defaulters. Out of the total observations, 80.4% of the people had fully paid the loan whereas 19.6% were defaulters.
+Here we can see that the data is highly imbalanced.
+![image](https://user-images.githubusercontent.com/70087327/130553398-bd36ab64-9eaa-4855-9dde-0db0a00cd171.png)
+
 Next is the bar graph for the term of the loan. For the customers who took a loan for 60 months, 32% defaulted whereas 68% did not. On the other hand, for the term of 36 months, only 16% defaulted whereas 84% did not default.
+![image](https://user-images.githubusercontent.com/70087327/130553482-f2f8269d-8b85-4163-9685-c9fb4add9dcb.png)
+
 Next is the bar graph for home ownership. Here I found that, 23% are defaulters which is higher than those who live in their own houses or those who have kept their house on mortgage.
+![image](https://user-images.githubusercontent.com/70087327/130553545-e4fcbc9d-0df0-42f3-8c38-1c25a99c7e47.png)
+
 Later we plotted the graph for the purpose of the loan. Most of the customers have applied for the purpose of debt consolidation followed by credit card, house improvement and others.
+![image](https://user-images.githubusercontent.com/70087327/130553604-9f465aae-99ad-4b7f-8ccb-46fe5f603afb.png)
+
 
 ## Train Test Split
 We splitted the data into training and testing set in the ratio 75:25 
 When observation in one class is higher than the observation in other classes then there exists a class imbalance. 
 Imbalance data can hamper our model accuracy. Out of total observations, 80.39% of the people have fully paid the loan where as 19.61% are defaulters. So, to overcome this challenge, we used oversampling method which duplicates random records from the minority class. 
+![image](https://user-images.githubusercontent.com/70087327/130553635-9f25a570-99b9-47e9-aca6-27d9d878d31d.png)
 
 ## Model Fitting
 Logistic Regression
@@ -54,7 +64,20 @@ XG boost i.e. extreme gradient boosting is one of the well-known gradient boos
 ## Hyperparameter tunning 
 A Machine Learning model is defined as a mathematical model with a number of parameters that need to be learned from the data. By training a model with existing data, we are able to fit the model parameters. 
 However, there is another kind of parameters, known as Hyperparameters, that cannot be directly learned from the regular training process. They are usually fixed before the actual training process begins. 
-This method use all the possible permutation and combination of the parameters. So, In short Hyperparameter tuning is choosing a set of optimal hyperparameters for a learning algorithm. 
+This method use all the possible permutation and combination of the parameters. So, In short Hyperparameter tuning is choosing a set of optimal hyperparameters for a learning algorithm.
+
+              Random Forest
+Parameter	Optimum value
+max_features	“auto”
+n_estimators	100
+max_depth
+	20
+
+min_samples_split
+	15
+
+min_samples_leaf	1
+
 
 # Results
 We First Built a model using the whole data set and then after extracting all the important features A model was built on the train data.
