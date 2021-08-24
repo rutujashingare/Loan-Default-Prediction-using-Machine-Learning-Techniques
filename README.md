@@ -22,15 +22,19 @@ Revolving line utilization rate and number of public record bankruptcies had mis
 ## EDA 
 The pie chart shows the distribution of defaulters and non-defaulters. Out of the total observations, 80.4% of the people had fully paid the loan whereas 19.6% were defaulters.
 Here we can see that the data is highly imbalanced.
+
 ![image](https://user-images.githubusercontent.com/70087327/130553398-bd36ab64-9eaa-4855-9dde-0db0a00cd171.png)
 
 Next is the bar graph for the term of the loan. For the customers who took a loan for 60 months, 32% defaulted whereas 68% did not. On the other hand, for the term of 36 months, only 16% defaulted whereas 84% did not default.
+
 ![image](https://user-images.githubusercontent.com/70087327/130553482-f2f8269d-8b85-4163-9685-c9fb4add9dcb.png)
 
 Next is the bar graph for home ownership. Here I found that, 23% are defaulters which is higher than those who live in their own houses or those who have kept their house on mortgage.
+
 ![image](https://user-images.githubusercontent.com/70087327/130553545-e4fcbc9d-0df0-42f3-8c38-1c25a99c7e47.png)
 
 Later we plotted the graph for the purpose of the loan. Most of the customers have applied for the purpose of debt consolidation followed by credit card, house improvement and others.
+
 ![image](https://user-images.githubusercontent.com/70087327/130553604-9f465aae-99ad-4b7f-8ccb-46fe5f603afb.png)
 
 
@@ -38,6 +42,7 @@ Later we plotted the graph for the purpose of the loan. Most of the customers ha
 We splitted the data into training and testing set in the ratio 75:25 
 When observation in one class is higher than the observation in other classes then there exists a class imbalance. 
 Imbalance data can hamper our model accuracy. Out of total observations, 80.39% of the people have fully paid the loan where as 19.61% are defaulters. So, to overcome this challenge, we used oversampling method which duplicates random records from the minority class. 
+
 ![image](https://user-images.githubusercontent.com/70087327/130553635-9f25a570-99b9-47e9-aca6-27d9d878d31d.png)
 
 ## Model Fitting
@@ -66,18 +71,9 @@ A Machine Learning model is defined as a mathematical model with a number of par
 However, there is another kind of parameters, known as Hyperparameters, that cannot be directly learned from the regular training process. They are usually fixed before the actual training process begins. 
 This method use all the possible permutation and combination of the parameters. So, In short Hyperparameter tuning is choosing a set of optimal hyperparameters for a learning algorithm.
 
-              Random Forest
-Parameter	Optimum value
-max_features	“auto”
-n_estimators	100
-max_depth
-	20
-
-min_samples_split
-	15
-
-min_samples_leaf	1
-
+![image](https://user-images.githubusercontent.com/70087327/130553947-832f5cf2-5e0b-49d0-a119-61ff0e0e1f93.png)
+![image](https://user-images.githubusercontent.com/70087327/130553961-c818bfae-00ee-48d2-8149-f28e411f7516.png)
+![image](https://user-images.githubusercontent.com/70087327/130553972-0b18115a-0fee-4b7f-afa9-ba88cd344184.png)
 
 # Results
 We First Built a model using the whole data set and then after extracting all the important features A model was built on the train data.
@@ -93,10 +89,16 @@ Here we see the AUC score for the XGBoost model is the highest with 91% which ca
 
 ## SHAP
 Next we took a glance at the Important Features from the XGBosst model using the SHAP values and we found that interest rate, DTi annual Income term,Grade and various Accounts are the important features which also was our initial Guess.
+
+![image](https://user-images.githubusercontent.com/70087327/130554274-223eac74-a52f-4e70-b074-d8b1fe5b56bb.png)
+
 SHAP which stands for Shapley Additive exPlanations, in a nutshell are used whenever we have a complex model, in our case XGBoost, and we want to understand what decisions the model is making.
 It quantifies the contribution that each feature brings to the prediction made by the model and is interpreted as follows :
 Blue indicates lower values of the feature whereas red indicates higher values.
 On the horizonal axis, the values to the left of 0 indicate negative impact on the customer defaulting and the values to the right indicate positive impact on the customer defaulting. 
+
+![image](https://user-images.githubusercontent.com/70087327/130554232-4abf26f4-4eb3-4c94-a7cf-9777c7fbf966.png)
+
 For example, the bar for debt-to-income ratio or dti shows that for lower values of dti, the customer is less likely to default (which is indicated by the blue colour on the left) and for higher values of dti,  the customer is more likely to default (which is indicated by the red colour on the right).
 Similarly, the bar for Annual income shows that for higher values of annual income, the customer is less likely to default and for lower values of annual income, the customer is more likely to default.
 
