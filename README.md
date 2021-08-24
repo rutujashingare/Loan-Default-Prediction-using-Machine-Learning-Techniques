@@ -17,34 +17,37 @@ Lending club facilitates personal loans, business loans, and financing of medica
 Data consists of customer demographics as well and financial details such as total amount funded, every month instalment (EMI) and rate of interest. Data also has housing and customer employment information such as housing ownership, years in job and annual income
 
 ## Data Pre-processing
-Revolving line utilization rate and number of public record bankruptcies had missing data points, but they accounted for less than 0.5% of the total data. So I removed the missing values in those columns. I imputed the missing values for the variable mortgage accounts. I also removed the observation with annual income equal to 0 because it is highly unlikely for a bank to give loan to a person with no income. For dimension reduction, the variables from the dataset which I thought would might not contribute significantly towards the analysis such as address, etc. I also converted the categorical variables into factors.
+Revolving line utilization rate and number of public record bankruptcies had missing data points, but they accounted for less than 0.5% of the total data. So We removed the missing values in those columns. We imputed the missing values for the variable mortgage accounts. We also removed the observation with annual income equal to 0 because it is highly unlikely for a bank to give loan to a person with no income. For dimension reduction, the variables from the dataset which I thought would might not contribute significantly towards the analysis such as address, etc. I also converted the categorical variables into factors.
 
 ## EDA 
 The pie chart shows the distribution of defaulters and non-defaulters. Out of the total observations, 80.4% of the people had fully paid the loan whereas 19.6% were defaulters. Here we can see that the data is highly imbalanced.
 Next is the bar graph for the term of the loan. For the customers who took a loan for 60 months, 32% defaulted whereas 68% did not. On the other hand, for the term of 36 months, only 16% defaulted whereas 84% did not default.
 Next is the bar graph for home ownership. Here I found that, 23% are defaulters which is higher than those who live in their own houses or those who have kept their house on mortgage.
-Later I plotted the graph for the purpose of the loan. Most of the customers have applied for the purpose of debt consolidation followed by credit card, house improvement and others.
+Later we plotted the graph for the purpose of the loan. Most of the customers have applied for the purpose of debt consolidation followed by credit card, house improvement and others.
 
 ## Train Test Split
-I splitted the data into training and testing set in the ratio 75:25 
+We splitted the data into training and testing set in the ratio 75:25 
 When observation in one class is higher than the observation in other classes then there exists a class imbalance. 
-Imbalance data can hamper our model accuracy. Out of total observations, 80.39% of the people have fully paid the loan where as 19.61% are defaulters. So, to overcome this challenge, I used oversampling method which duplicates random records from the minority class. 
+Imbalance data can hamper our model accuracy. Out of total observations, 80.39% of the people have fully paid the loan where as 19.61% are defaulters. So, to overcome this challenge, we used oversampling method which duplicates random records from the minority class. 
 
 ## Model Fitting
 Logistic Regression:
 Logistic regression which is also known as classification algorithm is used to describe data and explain the relationship between and dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.   
 logistic regression helps us to make informed decisions. Based on variable “loan_Status” , we can predict whether customer will default or not using logistic regression. 
  
-Random Forest: 
+Random Forest
+
 Random forest is a commonly-used supervised machine learning algorithm which combines the output of multiple decision trees to reach a single result.  
 Since random forest can handle both regression and classification tasks with a high degree of accuracy, it is a popular method among data scientists. Feature bagging also makes the random forest an effective tool for estimating missing values as it maintains accuracy when a portion of the data is missing. 
-In our case, I tried different resampling methods before applying the random forest algorithm and compared the respective accuracy values to find the best model. 
+In our case, we tried different resampling methods before applying the random forest algorithm and compared the respective accuracy values to find the best model. 
  
-KNN 
+KNN
+
 K-NN is one of the easiest and simplest machine learning algorithm which is mainly used for classification problems in industry.  
 (KNN) algorithm uses ‘feature similarity’ to predict the values of new datapoints which further means that the new data point will be assigned a value based on how closely it matches the points in the training set. KNN can be used in loan default prediction to predict weather an individual is fit for loan approval? Does that individual have the characteristics similar to the defaulters one? 
  
-XG Boost 
+XG Boost
+
 XG boost i.e. extreme gradient boosting is one of the well-known gradient boosting techniques having enhanced performance and speed in tree-based (sequential decision trees) machine learning algorithms. XGBoost has in-built regularization which prevents the model from overfitting. XGBoost has an in-built capability to handle missing values. 
  
 ## Hyperparameter tunning 
@@ -53,7 +56,7 @@ However, there is another kind of parameters, known as Hyperparameters, that c
 This method use all the possible permutation and combination of the parameters. So, In short Hyperparameter tuning is choosing a set of optimal hyperparameters for a learning algorithm. 
 
 # Results
-I First Built a model using the whole data set and then after extracting all the important features A model was built on the train data.
+We First Built a model using the whole data set and then after extracting all the important features A model was built on the train data.
 The model passed the global test meaning at least one variable significantly contributes to the model. Then by t-test we found the significant variables. The optimal Cut-off value was 0.56. The model also passed the Hosmer lemeshow goodness of fit test. Diagnostic Check involved checking the VIF values and we concluded that there was no presence of Multicollinearity.
 The model passed the global test meaning at least one variable significantly contributes to the model. Then by t-test we found the significant variables. The optimal Cut-off value was 0.56. The model also passed the Hosmer lemeshow goodness of fit test. Diagnostic Check involved checking the VIF values and we concluded that there was no presence of Multicollinearity.
 
@@ -65,7 +68,7 @@ Logistic Regression shows poor performance with 64 percent. Based on the Recall 
 Here we see the AUC score for the XGBoost model is the highest with 91% which can be seen in the blue curve. It implies that the model correctly classifies the defaulters from the non-defaulters exactly 91% of the time based on the features. followed by RandomForestClassifier with 89% KNN with 82% and Logistic Regression with 71%. AUC of XGBoost.
 
 ## SHAP
-Next I took a glance at the Important Features from the XGBosst model using the SHAP values and I found that interest rate, DTi annual Income term,Grade and various Accounts are the important features which also was our initial Guess.
+Next we took a glance at the Important Features from the XGBosst model using the SHAP values and we found that interest rate, DTi annual Income term,Grade and various Accounts are the important features which also was our initial Guess.
 SHAP which stands for Shapley Additive exPlanations, in a nutshell are used whenever we have a complex model, in our case XGBoost, and we want to understand what decisions the model is making.
 It quantifies the contribution that each feature brings to the prediction made by the model and is interpreted as follows :
 Blue indicates lower values of the feature whereas red indicates higher values.
