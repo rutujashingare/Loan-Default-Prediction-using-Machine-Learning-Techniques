@@ -87,6 +87,8 @@ The Accuracy in both the sets training and testing dataset is approximately the 
 Logistic Regression shows poor performance with 64 percent. Based on the Recall values XGBoost stands out to be the best model. The F1 Score for XGBoost and random Forest is the same and therefore we will look at the ROC Curve for all the models and will consider the model with highest 
 Here we see the AUC score for the XGBoost model is the highest with 91% which can be seen in the blue curve. It implies that the model correctly classifies the defaulters from the non-defaulters exactly 91% of the time based on the features. followed by RandomForestClassifier with 89% KNN with 82% and Logistic Regression with 71%. AUC of XGBoost.
 
+![image](https://user-images.githubusercontent.com/70087327/130554392-8351372e-3520-45f4-8ec7-a96216316895.png)
+
 ## SHAP
 Next we took a glance at the Important Features from the XGBosst model using the SHAP values and we found that interest rate, DTi annual Income term,Grade and various Accounts are the important features which also was our initial Guess.
 
