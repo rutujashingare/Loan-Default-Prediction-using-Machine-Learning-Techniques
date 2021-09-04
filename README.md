@@ -52,18 +52,15 @@ Logistic regression which is also known as classification algorithm is used to d
 logistic regression helps us to make informed decisions. Based on variable “loan_Status” , we can predict whether customer will default or not using logistic regression. 
  
 Random Forest
-
 Random forest is a commonly-used supervised machine learning algorithm which combines the output of multiple decision trees to reach a single result.  
 Since random forest can handle both regression and classification tasks with a high degree of accuracy, it is a popular method among data scientists. Feature bagging also makes the random forest an effective tool for estimating missing values as it maintains accuracy when a portion of the data is missing. 
 In our case, we tried different resampling methods before applying the random forest algorithm and compared the respective accuracy values to find the best model. 
  
 KNN
-
 K-NN is one of the easiest and simplest machine learning algorithm which is mainly used for classification problems in industry.  
 (KNN) algorithm uses ‘feature similarity’ to predict the values of new datapoints which further means that the new data point will be assigned a value based on how closely it matches the points in the training set. KNN can be used in loan default prediction to predict weather an individual is fit for loan approval? Does that individual have the characteristics similar to the defaulters one? 
  
 XG Boost
-
 XG boost i.e. extreme gradient boosting is one of the well-known gradient boosting techniques having enhanced performance and speed in tree-based (sequential decision trees) machine learning algorithms. XGBoost has in-built regularization which prevents the model from overfitting. XGBoost has an in-built capability to handle missing values. 
  
 ## Hyperparameter tunning 
