@@ -17,7 +17,7 @@ Lending club facilitates personal loans, business loans, and financing of medica
 Data consists of customer demographics as well and financial details such as total amount funded, every month instalment (EMI) and rate of interest. Data also has housing and customer employment information such as housing ownership, years in job and annual income
 
 ## Data Pre-processing
-Revolving line utilization rate and number of public record bankruptcies had missing data points, but they accounted for less than 0.5% of the total data. So We removed the missing values in those columns. We imputed the missing values for the variable mortgage accounts. We also removed the observation with annual income equal to 0 because it is highly unlikely for a bank to give loan to a person with no income. For dimension reduction, the variables from the dataset which I thought would might not contribute significantly towards the analysis such as address, etc. I also converted the categorical variables into factors.
+Revolving line utilization rate and number of public record bankruptcies had missing data points, but they accounted for less than 0.5% of the total data. So We removed the missing values in those columns. We imputed the missing values for the variable mortgage accounts. We also removed the observation with annual income equal to 0 because it is highly unlikely for a bank to give loan to a person with no income. We also converted the categorical variables into factors.
 
 ## EDA 
 The pie chart shows the distribution of defaulters and non-defaulters. Out of the total observations, 80.4% of the people had fully paid the loan whereas 19.6% were defaulters.
