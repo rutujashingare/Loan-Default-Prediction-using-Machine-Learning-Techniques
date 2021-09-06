@@ -48,7 +48,7 @@ Imbalance data can hamper our model accuracy. Out of total observations, 80.39% 
 ## Model Fitting
 Logistic Regression: 
 Logistic regression which is also known as classification algorithm is used to describe data and explain the relationship between and dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.   
-logistic regression helps us to make informed decisions. Based on variable “loan_Status” , we can predict whether customer will default or not using logistic regression. 
+logistic regression helps us to make informed decisions. Here in our case, Based on variable “loan_Status” , we can predict whether customer will default or not using logistic regression. 
  
 Random Forest: 
 Random forest is a commonly-used supervised machine learning algorithm which combines the output of multiple decision trees to reach a single result.  
