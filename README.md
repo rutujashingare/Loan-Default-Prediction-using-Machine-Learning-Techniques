@@ -27,15 +27,15 @@ Here we can see that the data is highly imbalanced.
 
 Next is the bar graph for the term of the loan. For the customers who took a loan for 60 months, 32% defaulted whereas 68% did not. On the other hand, for the term of 36 months, only 16% defaulted whereas 84% did not default.
 
-![image](https://user-images.githubusercontent.com/70087327/130553482-f2f8269d-8b85-4163-9685-c9fb4add9dcb.png)
+![image](https://user-images.githubusercontent.com/70087327/132170819-544cad54-0b14-431e-869f-8314b6237345.png)
 
 Next is the bar graph for home ownership. Here I found that, 23% are defaulters which is higher than those who live in their own houses or those who have kept their house on mortgage.
 
-![image](https://user-images.githubusercontent.com/70087327/130553545-e4fcbc9d-0df0-42f3-8c38-1c25a99c7e47.png)
+![image](https://user-images.githubusercontent.com/70087327/132170929-47dfabce-bb37-468d-b4a7-8e4e68539b37.png)
 
 Later we plotted the graph for the purpose of the loan. Most of the customers have applied for the purpose of debt consolidation followed by credit card, house improvement and others.
 
-![image](https://user-images.githubusercontent.com/70087327/130553604-9f465aae-99ad-4b7f-8ccb-46fe5f603afb.png)
+![image](https://user-images.githubusercontent.com/70087327/132170975-91ede4ab-efc4-4bfb-a02c-d37f024cca95.png)
 
 
 ## Train Test Split
