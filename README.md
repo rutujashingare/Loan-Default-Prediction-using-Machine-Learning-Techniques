@@ -39,7 +39,7 @@ Later we plotted the graph for the purpose of the loan. Most of the customers ha
 
 
 ## Train Test Split
-We splitted the data into training and testing set in the ratio 75:25 
+We splitted the data into training and testing set in the ratio 75:25. 
 When observation in one class is higher than the observation in other classes then there exists a class imbalance. 
 Imbalance data can hamper our model accuracy. Out of total observations, 80.39% of the people have fully paid the loan where as 19.61% are defaulters. So, to overcome this challenge, we used oversampling method which duplicates random records from the minority class. 
 
