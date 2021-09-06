@@ -20,7 +20,7 @@ Data consists of customer demographics as well as financial details such as tota
 Revolving line utilization rate and number of public record bankruptcies had missing data points, but they accounted for less than 0.5% of the total data. So We removed the missing values in those columns. We imputed the missing values for the variable mortgage accounts. We also removed the observation with annual income equal to 0 because it is highly unlikely for a bank to give loan to a person with no income. We also converted the categorical variables into factors.
 
 ## EDA 
-The pie chart shows the distribution of defaulters and non-defaulters. Out of the total observations, 80.4% of the people had fully paid the loan whereas 19.6% were defaulters.
+The pie chart shows the distribution of defaulters and non-defaulters. Out of the total observations, 80% of the people had fully paid the loan whereas 20% were defaulters.
 Here we can see that the data is highly imbalanced.
 
 ![image](https://user-images.githubusercontent.com/70087327/132171076-46381378-adc9-43e7-807f-2fb5a73dfdf8.png)
