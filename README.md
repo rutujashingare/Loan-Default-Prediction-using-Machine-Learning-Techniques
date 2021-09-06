@@ -86,19 +86,19 @@ The Accuracy in both the sets training and testing dataset is approximately the 
 Logistic Regression shows poor performance with 64 percent. Based on the Recall values XGBoost stands out to be the best model. The F1 Score for XGBoost and random Forest is the same and therefore we will look at the ROC Curve for all the models and will consider the model with highest 
 Here we see the AUC score for the XGBoost model is the highest with 91% which can be seen in the blue curve. It implies that the model correctly classifies the defaulters from the non-defaulters exactly 91% of the time based on the features. followed by RandomForestClassifier with 89% KNN with 82% and Logistic Regression with 71%. AUC of XGBoost.
 
-![image](https://user-images.githubusercontent.com/70087327/130554392-8351372e-3520-45f4-8ec7-a96216316895.png)
+![image](https://user-images.githubusercontent.com/70087327/132230882-c086d96e-11cf-431f-a8da-d24011b1bc9d.png)
 
 ## SHAP
 Next we took a glance at the Important Features from the XGBosst model using the SHAP values and we found that interest rate, DTi annual Income term,Grade and various Accounts are the important features which also was our initial Guess.
 
-![image](https://user-images.githubusercontent.com/70087327/130554274-223eac74-a52f-4e70-b074-d8b1fe5b56bb.png)
+![image](https://user-images.githubusercontent.com/70087327/132230824-9a336d53-6b0d-4855-832b-641aec4bbf7a.png)
 
 SHAP which stands for Shapley Additive exPlanations, in a nutshell are used whenever we have a complex model, in our case XGBoost, and we want to understand what decisions the model is making.
 It quantifies the contribution that each feature brings to the prediction made by the model and is interpreted as follows :
 Blue indicates lower values of the feature whereas red indicates higher values.
 On the horizonal axis, the values to the left of 0 indicate negative impact on the customer defaulting and the values to the right indicate positive impact on the customer defaulting. 
 
-![image](https://user-images.githubusercontent.com/70087327/130554232-4abf26f4-4eb3-4c94-a7cf-9777c7fbf966.png)
+![image](https://user-images.githubusercontent.com/70087327/132230847-efca118b-7590-4a5a-b24e-f3bc0823df9b.png)
 
 For example, the bar for debt-to-income ratio or dti shows that for lower values of dti, the customer is less likely to default (which is indicated by the blue colour on the left) and for higher values of dti,  the customer is more likely to default (which is indicated by the red colour on the right).
 Similarly, the bar for Annual income shows that for higher values of annual income, the customer is less likely to default and for lower values of annual income, the customer is more likely to default.
