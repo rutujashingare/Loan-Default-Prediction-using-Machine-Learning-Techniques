@@ -82,7 +82,8 @@ The model passed the global test meaning at least one variable significantly con
 In the confusion matrix, We can see that the Reference values are shown Row wise and the Predicted classes column wise. The matrix also shows distribution of true Positive, true negative, false positive and False negative. Logistic Regression has the Highest proportion of False positives and Negatives followed by KNN, XGBoost and Random Forest.
 The same can be seen from the Confusion Matrix of Test data. The same trend can be seen here also. Random forest having the highest accuracy among all of them
 The Accuracy in both the sets training and testing dataset is approximately the same within different models.
-![image](https://user-images.githubusercontent.com/70087327/132231342-f1dea59e-2e09-460a-a14a-e2fed8c365c8.png)
+
+![image](https://user-images.githubusercontent.com/70087327/132231809-1508ce17-a3de-4f2a-ae9d-c9120b87370e.png)
 
 Logistic Regression shows poor performance with 64 percent. Based on the Recall values XGBoost stands out to be the best model. The F1 Score for XGBoost and random Forest is the same and therefore we will look at the ROC Curve for all the models and will consider the model with highest 
 Here we see the AUC score for the XGBoost model is the highest with 91% which can be seen in the blue curve. It implies that the model correctly classifies the defaulters from the non-defaulters exactly 91% of the time based on the features. followed by RandomForestClassifier with 89% KNN with 82% and Logistic Regression with 71%. AUC of XGBoost.
