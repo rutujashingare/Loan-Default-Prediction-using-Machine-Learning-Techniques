@@ -57,7 +57,7 @@ In our case, we tried different resampling methods before applying the random fo
  
  
 ### KNN 
-K-NN is one of the easiest and simplest machine learning algorithm which is mainly used for classification problems in industry.  
+K Nearest Neighbor is one of the easiest and simplest machine learning algorithm which is mainly used for classification problems in industry.  
 KNN algorithm uses ‘feature similarity’ to predict the values of new datapoints which further means that the new data point will be assigned a value based on how closely it matches the points in the training set. KNN can be used in loan default prediction to predict weather an individual is fit for the loan approval? Does that individual have the characteristics similar to the defaulters one? 
  
  
