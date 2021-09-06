@@ -23,7 +23,7 @@ Revolving line utilization rate and number of public record bankruptcies had mis
 The pie chart shows the distribution of defaulters and non-defaulters. Out of the total observations, 80.4% of the people had fully paid the loan whereas 19.6% were defaulters.
 Here we can see that the data is highly imbalanced.
 
-![image](https://user-images.githubusercontent.com/70087327/132170352-7b092885-de7a-45b9-b682-1a2d30774d40.png)
+![image](https://user-images.githubusercontent.com/70087327/132171076-46381378-adc9-43e7-807f-2fb5a73dfdf8.png)
 
 Next is the bar graph for the term of the loan. For the customers who took a loan for 60 months, 32% defaulted whereas 68% did not. On the other hand, for the term of 36 months, only 16% defaulted whereas 84% did not default.
 
