@@ -75,7 +75,7 @@ This method use all the possible permutation and combination of the parameters. 
 ![image](https://user-images.githubusercontent.com/70087327/130553972-0b18115a-0fee-4b7f-afa9-ba88cd344184.png)
 
 # Results
-We First Built a model using the whole data set and then after extracting all the important features A model was built on the train data.
+We First Built a model using the whole data set and then after extracting all the important features. A model was built on the train data.
 The model passed the global test meaning at least one variable significantly contributes to the model. Then by t-test we found the significant variables. The optimal Cut-off value was 0.56. The model also passed the Hosmer lemeshow goodness of fit test. Diagnostic Check involved checking the VIF values and we concluded that there was no presence of Multicollinearity.
 The model passed the global test meaning at least one variable significantly contributes to the model. Then by t-test we found the significant variables. The optimal Cut-off value was 0.56. The model also passed the Hosmer lemeshow goodness of fit test. Diagnostic Check involved checking the VIF values and we concluded that there was no presence of Multicollinearity.
 
