@@ -53,8 +53,7 @@ logistic regression helps us to make informed decisions. Here in our case, Based
 
  
 ##### Random Forest                                                                                                                                                              
-Random forest is a commonly-used supervised machine learning algorithm which combines the output of multiple decision trees to reach a single result.  
-Since random forest can handle both regression and classification tasks with a high degree of accuracy, it is a popular method among data scientists. Feature bagging also makes the random forest an effective tool for estimating missing values as it maintains accuracy when a portion of the data is missing. 
+Random forest is a commonly-used supervised machine learning algorithm which combines the output of multiple decision trees to reach a single result. Since random forest can handle both regression and classification tasks with a high degree of accuracy, it is a popular method among data scientists. Feature bagging also makes the random forest an effective tool for estimating missing values as it maintains accuracy when a portion of the data is missing. 
 In our case, we tried different resampling methods before applying the random forest algorithm and compared the respective accuracy values to find the best model. 
  
  
