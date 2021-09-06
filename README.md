@@ -46,23 +46,21 @@ Imbalance data can hamper our model accuracy. Out of total observations, 80.39% 
 ![image](https://user-images.githubusercontent.com/70087327/130553635-9f25a570-99b9-47e9-aca6-27d9d878d31d.png)
 
 ## Model Fitting
-Logistic Regression: 
-      Logistic regression which is also known as classification algorithm is used to describe data and explain the relationship between and dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.   
+
+##### Logistic Regression
+Logistic regression which is also known as classification algorithm is used to describe data and explain the relationship between and dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.   
 logistic regression helps us to make informed decisions. Here in our case, Based on variable “loan_Status” , we can predict whether customer will default or not using logistic regression. 
  
-Random Forest: 
-
+##### Random Forest: 
 Random forest is a commonly-used supervised machine learning algorithm which combines the output of multiple decision trees to reach a single result.  
 Since random forest can handle both regression and classification tasks with a high degree of accuracy, it is a popular method among data scientists. Feature bagging also makes the random forest an effective tool for estimating missing values as it maintains accuracy when a portion of the data is missing. 
 In our case, we tried different resampling methods before applying the random forest algorithm and compared the respective accuracy values to find the best model. 
  
-KNN: 
-
+##### KNN 
 K-NN is one of the easiest and simplest machine learning algorithm which is mainly used for classification problems in industry.  
 KNN algorithm uses ‘feature similarity’ to predict the values of new datapoints which further means that the new data point will be assigned a value based on how closely it matches the points in the training set. KNN can be used in loan default prediction to predict weather an individual is fit for the loan approval? Does that individual have the characteristics similar to the defaulters one? 
  
-XG Boost:
-
+##### XG Boost:
 XG boost i.e. extreme gradient boosting is one of the well-known gradient boosting techniques having enhanced performance and speed in tree-based (sequential decision trees) machine learning algorithms. XGBoost has in-built regularization which prevents the model from overfitting. XGBoost has an in-built capability to handle missing values. 
  
 ## Hyperparameter tunning 
