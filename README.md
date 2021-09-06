@@ -57,12 +57,12 @@ Random forest is a commonly-used supervised machine learning algorithm which com
 In our case, we tried different resampling methods before applying the random forest algorithm and compared the respective accuracy values to find the best model. 
  
  
-#### KNN 
+### KNN 
 K-NN is one of the easiest and simplest machine learning algorithm which is mainly used for classification problems in industry.  
 KNN algorithm uses ‘feature similarity’ to predict the values of new datapoints which further means that the new data point will be assigned a value based on how closely it matches the points in the training set. KNN can be used in loan default prediction to predict weather an individual is fit for the loan approval? Does that individual have the characteristics similar to the defaulters one? 
  
  
-#### XG Boost
+### XG Boost
 XG boost i.e. extreme gradient boosting is one of the well-known gradient boosting techniques having enhanced performance and speed in tree-based (sequential decision trees) machine learning algorithms. XGBoost has in-built regularization which prevents the model from overfitting. XGBoost has an in-built capability to handle missing values. 
 
 
