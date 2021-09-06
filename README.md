@@ -86,7 +86,7 @@ The Accuracy in both the sets training and testing dataset is approximately the 
 ![image](https://user-images.githubusercontent.com/70087327/132232744-035d6f3e-8fe0-4ee8-8047-20301d3b7a42.png)
 
 Logistic Regression shows poor performance with 64 percent. Based on the Recall values XGBoost stands out to be the best model. The F1 Score for XGBoost and random Forest is the same and therefore we will look at the ROC Curve for all the models and will consider the model with highest 
-Here we see the AUC score for the XG Boost model is the highest with 91% which can be seen in the blue curve. It implies that the model correctly classifies the defaulters from the non-defaulters exactly 91% of the time based on the features. followed by RandomForestClassifier with 89% KNN with 82% and Logistic Regression with 71%. 
+Here we see the AUC score for the XG Boost model is the highest with 91% which can be seen in the blue curve. It implies that the model correctly classifies the defaulters from the non-defaulters exactly 91% of the time based on the features followed by RandomForestClassifier with 89% KNN with 82% and Logistic Regression with 71%. 
 
 ![image](https://user-images.githubusercontent.com/70087327/132230882-c086d96e-11cf-431f-a8da-d24011b1bc9d.png)
 
