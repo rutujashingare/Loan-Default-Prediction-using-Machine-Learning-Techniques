@@ -29,7 +29,7 @@ Next is the bar graph for the term of the loan. For the customers who took a loa
 
 ![image](https://user-images.githubusercontent.com/70087327/132170819-544cad54-0b14-431e-869f-8314b6237345.png)
 
-Next is the bar graph for home ownership. Here I found that, 23% are defaulters which is higher than those who live in their own houses or those who have kept their house on mortgage.
+Next is the bar graph for home ownership. Here we found that Applicants who have their own house seem to default less as compared to those who live on rent or mortgage.
 
 ![image](https://user-images.githubusercontent.com/70087327/132170929-47dfabce-bb37-468d-b4a7-8e4e68539b37.png)
 
