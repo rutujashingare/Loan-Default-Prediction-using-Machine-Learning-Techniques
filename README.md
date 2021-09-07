@@ -91,7 +91,7 @@ Here we see the AUC score for the XG Boost model is the highest with 91% which c
 ![image](https://user-images.githubusercontent.com/70087327/132230882-c086d96e-11cf-431f-a8da-d24011b1bc9d.png)
 
 ## SHAP
-Next we took a glance at the Important Features from the XGBosst model using the SHAP values and we found that interest rate, DTi annual Income term,Grade and various Accounts are the important features which also was our initial Guess.
+Next we took a glance at the Important Features from the XGBosst model using the SHAP values and we found that interest rate, DTI, annual Income term, Grade and various Accounts are the important features which also was our initial Guess.
 
 ![image](https://user-images.githubusercontent.com/70087327/132230824-9a336d53-6b0d-4855-832b-641aec4bbf7a.png)
 
