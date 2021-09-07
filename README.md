@@ -77,9 +77,8 @@ This method use all the possible permutation and combination of the parameters. 
 # Results
 We First Built a model using the whole data set and then after extracting all the important features. A model was built on the train data.
 The model passed the global test meaning at least one variable significantly contributes to the model. Then by t-test we found the significant variables. The optimal Cut-off value was 0.56. The model also passed the Hosmer lemeshow goodness of fit test. Diagnostic Check involved checking the VIF values and we concluded that there was no presence of Multicollinearity.
-The model passed the global test meaning at least one variable significantly contributes to the model. Then by t-test we found the significant variables. The optimal Cut-off value was 0.56. The model also passed the Hosmer lemeshow goodness of fit test. Diagnostic Check involved checking the VIF values and we concluded that there was no presence of Multicollinearity.
 
-In the confusion matrix, We can see that the Reference values are shown Row wise and the Predicted classes column wise. The matrix also shows distribution of true Positive, true negative, false positive and False negative. Logistic Regression has the Highest proportion of False positives and Negatives followed by KNN, XGBoost and Random Forest.
+In the confusion matrix, The Reference values were showed Row wise and the Predicted classes column wise. The matrix also showed distribution of true Positive, true negative, false positive and False negative. From the confusion matrix, we can say that Logistic Regression has the Highest proportion of False positives and Negatives followed by KNN, XGBoost and Random Forest.
 The same can be seen from the Confusion Matrix of Test data. The same trend can be seen here also. Random forest having the highest accuracy among all of them
 The Accuracy in both the sets training and testing dataset is approximately the same within different models.
 
