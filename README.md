@@ -95,7 +95,7 @@ Next we took a glance at the Important Features from the XGBosst model using the
 
 ![image](https://user-images.githubusercontent.com/70087327/132230824-9a336d53-6b0d-4855-832b-641aec4bbf7a.png)
 
-SHAP which stands for Shapley Additive exPlanations, in a nutshell are used whenever we have a complex model, in our case XGBoost, and we want to understand what decisions the model is making.
+SHAP which stands for Shapley Additive explanations, in a nutshell are used whenever we have a complex model, in our case XGBoost, and we want to understand what decisions the model is making.
 It quantifies the contribution that each feature brings to the prediction made by the model and is interpreted as follows :
 Blue indicates lower values of the feature whereas red indicates higher values.
 On the horizonal axis, the values to the left of 0 indicate negative impact on the customer defaulting and the values to the right indicate positive impact on the customer defaulting. 
